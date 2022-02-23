@@ -12,7 +12,7 @@ const loadPokemons = async() => {
         console.log('response', response);
         const data = await response.json(); // Asynchronous operation - must be awaited
 
-        console.log('DATA  ', data);
+        console.log('DATA', data);
         data.results.forEach((pokemon, index) => {
             const listItem = document.createElement('li');
             const name = document.createTextNode(`${index + 1} - ${pokemon.name}`);
